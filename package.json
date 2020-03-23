@@ -16,13 +16,14 @@
   "scripts": {
     "dev": "nuxt example",
     "generate": "nuxt generate example",
-    "lint": "eslint --ext .js,.vue example lib",
+    "lint": "eslint --ext .js,.vue example lib test",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint"
+    "test": "yarn lint && jest"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "latest",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
