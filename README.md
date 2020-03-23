@@ -26,7 +26,7 @@ Add `@hexdigital/nuxt-intercom` to the buildModules section of nuxt.config.js
     '@hexdigital/nuxt-intercom',
   ],
   intercom: {
-    id: 'XXXXXXXXXX',
+    appId: 'XXXXXXXXXX',
   },
 }
 ```
@@ -37,12 +37,13 @@ Defaults:
 ```js
 const defaults = {
   appId: null, // Intercom ID
-  autoInit: true, // True to load intercom script on page load, false to allow manually adding later
-
+  autoBoot: true, // True to boot messenger widget and show UI on page load, false to allow manually booting later
+  debug: false, // True to show debug messages in the console, useful for development, false to not show them
+    
   scriptId: 'intercom-script', // String to identfy the script tag, for vue-meta
-  scriptDefer: false, // True to defer loading intercom widget javascript until page loads, false to async load it immediately
-
-  updateOnPageRoute: true, // True to call intercom's 'update' method on route change, false to not do this
+  scriptDefer: false, // True to defer loading intercom widget javascript until page loads, false to async load it in document flow
+    
+  updateOnPageRoute: true // True to call intercom's 'update' method on route change, false to not do this
 };
 ```
 
