@@ -1,6 +1,6 @@
 {
   "name": "@hexdigital/nuxt-intercom",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Intercom Module for Nuxt.js",
   "repository": "hex-digital/nuxt-intercom",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "generate": "nuxt generate example",
     "lint": "eslint --ext .js,.vue example lib",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint && jest"
+    "test": "yarn lint"
   },
   "dependencies": {},
   "devDependencies": {
