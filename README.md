@@ -14,13 +14,13 @@
 
 1. Add `@hexdigital/nuxt-intercom` dependency to your project
 
-```javascript
+```bash
 yarn add @hexdigitalnuxt-intercom # or npm install @hexdigitalnuxt-intercom
 ```
 
 Add `@hexdigital/nuxt-intercom` to the buildModules section of nuxt.config.js
 
-```javascript
+```js
 {
   buildModules: [
     '@hexdigital/nuxt-intercom',
@@ -33,10 +33,15 @@ Add `@hexdigital/nuxt-intercom` to the buildModules section of nuxt.config.js
 
 ## Options
 Defaults:
-```javascript
+
+```js
 const defaults = {
-  id: null, // Intercom ID
-  scriptDefer: false, // True to load intercom script on page load, false to allow manually adding later
+  appId: null, // Intercom ID
+  autoInit: true, // True to load intercom script on page load, false to allow manually adding later
+
+  scriptId: 'intercom-script', // String to identfy the script tag, for vue-meta
+  scriptDefer: false, // True to defer loading intercom widget javascript until page loads, false to async load it immediately
+
   updateOnPageRoute: true, // True to call intercom's 'update' method on route change, false to not do this
 };
 ```

@@ -14,6 +14,9 @@
   ],
   "main": "lib/module.js",
   "scripts": {
+    "dev": "nuxt example",
+    "generate": "nuxt generate example",
+    "lint": "eslint --ext .js,.vue example lib",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint && jest"
   },
@@ -35,5 +38,8 @@
     "lint-staged": "latest",
     "nuxt-edge": "latest",
     "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
