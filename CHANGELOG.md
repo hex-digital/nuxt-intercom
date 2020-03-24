@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/hex-digital/nuxt-intercom/compare/v0.0.6...v0.0.7) (2020-03-24)
+
+
+### Bug Fixes
+
+* prevent debug logs appearing in non-debug mode ([c3dbb2a](https://github.com/hex-digital/nuxt-intercom/commit/c3dbb2af90d21affd26599a65585c93592ce2e4e))
+
 ### [0.0.6](https://github.com/hex-digital/nuxt-intercom/compare/v0.0.5...v0.0.6) (2020-03-24)
 
 ### [0.0.5](https://github.com/hex-digital/nuxt-intercom/compare/v0.0.4...v0.0.5) (2020-03-24)
