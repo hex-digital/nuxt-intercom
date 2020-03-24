@@ -17,6 +17,6 @@ module.exports = {
     '~/plugins/intercom'
   ],
   intercom: {
-    appId: process.env.INTERCOM_ID || 'test'
+    appId: process.env.INTERCOM_ID || null
   }
 }
