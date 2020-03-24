@@ -8,7 +8,7 @@
 
 > Intercom Module for Nuxt.js
 
-[🚀 Demo Site available here](https://nuxt-intercom.netlify.com)
+[🚀 **Demo Site available here**](https://nuxt-intercom.netlify.com)
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
