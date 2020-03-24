@@ -57,12 +57,16 @@ describe('Intercom.js', () => {
       expect(bootIntercom).toThrowError(/window/)
     })
 
+    test('can show that it is not ready before init', () => {
+      expect(intercom.isReady()).toBeFalsy()
+    })
+
     test('can initialise the intercom object', () => {
       intercom.init()
       expect(intercomWindowMock).toHaveBeenCalledWith('onHide', expect.any(Function))
       expect(intercomWindowMock).toHaveBeenCalledWith('onShow', expect.any(Function))
       expect(intercomWindowMock).toHaveBeenCalledWith('onUnreadCountChange', expect.any(Function))
-      expect(intercom.isReady).toBeTruthy()
+      expect(intercom.isReady()).toBeTruthy()
     })
 
     test('can boot', () => {
@@ -72,6 +76,12 @@ describe('Intercom.js', () => {
         'boot',
         expect.objectContaining({ app_id: appId, last_request_at: expect.anything() })
       )
+    })
+
+    test('can boot when intercomSettings are already defined', () => {
+      global.window.intercomSettings = { app_id: 'fakeId' }
+      intercom.boot()
+      expect(global.window.intercomSettings.app_id).toEqual(appId)
     })
 
     test('can boot with user data', () => {
