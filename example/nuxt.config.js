@@ -1,7 +1,7 @@
 const { resolve } = require('path')
 
 module.exports = {
-  mode: 'spa',
+  ssr: true,
   rootDir: resolve(__dirname, '..'),
   buildDir: resolve(__dirname, '.nuxt'),
   head: {
