@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/hex-digital/nuxt-intercom/compare/v0.0.9...v0.0.10) (2021-06-14)
+
+
+### Features
+
+* adding config object for messenger attributes ([cc58994](https://github.com/hex-digital/nuxt-intercom/commit/cc58994218d1f34e7c941b27753ad094dfcc51e3))
+
+
+### Bug Fixes
+
+* updating k -> key and newKey -> snakeCaseKey to be more verbose ([5edbfc1](https://github.com/hex-digital/nuxt-intercom/commit/5edbfc1e1ebb3ef48655de8ca53728955d1482e6))
+
 ### [0.0.9](https://github.com/hex-digital/nuxt-intercom/compare/v0.0.8...v0.0.9) (2020-03-24)
 
 ### [0.0.8](https://github.com/hex-digital/nuxt-intercom/compare/v0.0.7...v0.0.8) (2020-03-24)
