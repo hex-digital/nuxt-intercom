@@ -95,6 +95,16 @@ describe('Intercom.js', () => {
       )
     })
 
+    test('can boot with messenger attributes', () => {
+      const config = { customLauncherSelector: '.intercom-btn', hideDefaultLauncher: true }
+
+      intercom = new Intercom(appId, { config })
+      intercom.boot()
+
+      expect(global.window.intercomSettings.custom_launcher_selector).toEqual('.intercom-btn')
+      expect(global.window.intercomSettings.hide_default_launcher).toEqual(true)
+    })
+
     test('can change appId on boot', () => {
       const newAppId = 'newId123'
       intercom.boot({ app_id: newAppId })
