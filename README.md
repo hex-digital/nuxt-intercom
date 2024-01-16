@@ -6,7 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> Intercom Module for Nuxt.js
+> This module is for Nuxt 2 only. For a Nuxt 3 version, please see https://github.com/devonik/nuxt-3-intercom
 
 [🚀 **Demo Site available here**](https://nuxt-intercom.netlify.com)
 
